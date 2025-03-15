@@ -1,38 +1,76 @@
-# applied-ml-template
+# Housing Price Prediction using Regression
 
-Start by copying this template repository into your GitHub account. Replace "template" with your name or alias, e.g. applied-ml-case.
+## Introduction
+This project applies **regression modeling** to predict housing prices based on various features such as median income and average rooms per household. The dataset used is the **California Housing Prices Dataset** from Scikit-Learn.
 
-We will use this repo for several lab projects. 
+## Project Overview
+The main objectives of this project are:
+- Load and explore the dataset
+- Visualize feature distributions
+- Select relevant features for modeling
+- Train a **Linear Regression** model
+- Evaluate model performance using **R², MAE, and RMSE**
 
-## Set up Machine and Follow Professional Workflow
+## Dataset
+We use the **California Housing Prices Dataset** available in `sklearn.datasets`. This dataset contains:
+- **Features:** Median income, number of rooms, latitude, longitude, and more.
+- **Target Variable:** Median house price in a district.
 
-Read and follow the standard set up and work flow provided at Professional Analytics: Project Setup / Initialization / Standard Workflow
+## Installation
+To set up the project, follow these steps:
+1. **Clone the Repository**:
+   ```sh
+   git clone <repository-link>
+   cd <project-folder>
+   ```
+2. **Create a Virtual Environment (Optional but Recommended):**
+   ```sh
+   python -m venv .venv
+   source .venv/bin/activate  # On Windows, use .venv\Scripts\activate
+   ```
+3. **Install Dependencies:**
+   ```sh
+   pip install -r requirements.txt
+   ```
 
-- [pro-analytics-01](https://github.com/denisecase/pro-analytics-01)
+## Running the Notebook
+1. Start Jupyter Notebook:
+   ```sh
+   jupyter notebook
+   ```
+2. Open `ml01.ipynb` and run the cells step by step.
 
-## Contents of this Repository
+## Project Structure
+```
+├── ml01.ipynb        # Jupyter Notebook with code and analysis
+├── requirements.txt  # List of dependencies
+├── README.md         # Project documentation
+└── .venv/            # Virtual environment (optional)
+```
 
-- .venv - this folder will appear when you create your virtual environment
-- .vscode - this folder has some settings that help VS Code & Pylance find packages
-- .gitignore - keep .venv and other stuff out of source control
-- README.md - introduction to this repository
-- requirements.txt - list of external packages used (read this)
+## Model Performance
+The trained **Linear Regression Model** is evaluated using:
+- **R² Score:** Measures how well the model explains variability.
+- **Mean Absolute Error (MAE):** Average absolute differences between actual and predicted values.
+- **Root Mean Squared Error (RMSE):** Measures prediction error magnitude.
 
-## Folders for Examples
+## Results
+- The **R² Score** indicates how well the model fits the data.
+- **Lower RMSE and MAE** suggest better performance.
 
-Starter files for the example labs
+## Future Improvements
+- Experimenting with **additional regression models** (e.g., Decision Trees, Random Forests).
+- Feature engineering to improve predictive performance.
+- Hyperparameter tuning for better optimization.
 
-- example01 folder
-- example02 folder
+## Author
+**Huzaifa Nadeem**
 
-## Folders for Lab Projects
+## License
+This project is for educational purposes. Modify and distribute as needed!
 
-Each lab project will be completed in its own folder.
-
-- lab01 folder:
-   - ml01.ipynb - COMPLETE THIS 
-   - ml01.py - working script with just the code
-   - README.md - instructions - modify this to present your lab project
+---
+For any issues, feel free to reach out!
 
 
 
