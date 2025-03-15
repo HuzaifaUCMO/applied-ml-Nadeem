@@ -1,105 +1,76 @@
-# ml-01
+# Housing Price Prediction using Regression
 
-## Overview
-Businesses and organizations often need to understand the relationships between different factors to make better decisions.
-For example, a company may want to predict the fuel efficiency of a car based on its weight and engine size or estimate home prices based on square footage and location.
-Regression analysis helps identify and quantify these relationships between numerical features, providing insights that can be used for forecasting and decision-making.
+## Introduction
+This project applies **regression modeling** to predict housing prices based on various features such as median income and average rooms per household. The dataset used is the **California Housing Prices Dataset** from Scikit-Learn.
 
-This project demonstrates your ability to apply regression modeling techniques to a real-world dataset. You will:
-- Load and explore a dataset.
-- Choose and justify features for predicting a target variable.
-- Train a regression model and evaluate performance.
-- Compare multiple regression approaches.
-- Document your work in a structured Jupyter Notebook.
+## Project Overview
+The main objectives of this project are:
+- Load and explore the dataset
+- Visualize feature distributions
+- Select relevant features for modeling
+- Train a **Linear Regression** model
+- Evaluate model performance using **R², MAE, and RMSE**
 
-## Dataset 
-Housing Prices Dataset (Predict home values based on features like square footage and location)  
-- We use the built-in dataset from scikit-learn:  
-   - `from sklearn.datasets import fetch_california_housing`  
-- Additional dataset available on Kaggle:  
-   - [Kaggle Housing Prices](https://www.kaggle.com/c/house-prices-advanced-regression-techniques)  
+## Dataset
+We use the **California Housing Prices Dataset** available in `sklearn.datasets`. This dataset contains:
+- **Features:** Median income, number of rooms, latitude, longitude, and more.
+- **Target Variable:** Median house price in a district.
 
-## Python Library for Machine Learning: scikit-learn
-We use scikit-learn, built on NumPy, SciPy, and matplotlib
-   - Read more at <https://scikit-learn.org/>
-   - Scikit-learn supports classification, regression, and clustering.
-   - This project applies regression.
+## Installation
+To set up the project, follow these steps:
+1. **Clone the Repository**:
+   ```sh
+   git clone <repository-link>
+   cd <project-folder>
+   ```
+2. **Create a Virtual Environment (Optional but Recommended):**
+   ```sh
+   python -m venv .venv
+   source .venv/bin/activate  # On Windows, use .venv\Scripts\activate
+   ```
+3. **Install Dependencies:**
+   ```sh
+   pip install -r requirements.txt
+   ```
 
-**Important:** Use a 2-step installation to avoid timeouts and partial installs:  
-1. **First Install:** Install from `requirements.txt` with `scikit-learn` commented out.  
-2. **Second Install:** Uncomment `scikit-learn` and rerun the install command.
+## Running the Notebook
+1. Start Jupyter Notebook:
+   ```sh
+   jupyter notebook
+   ```
+2. Open `ml01.ipynb` and run the cells step by step.
 
----
+## Project Structure
+```
+├── ml01.ipynb        # Jupyter Notebook with code and analysis
+├── requirements.txt  # List of dependencies
+├── README.md         # Project documentation
+└── .venv/            # Virtual environment (optional)
+```
 
-## Professional Python Setup and Workflow
-We follow professional Python practices. 
-Full instructions are available at <https://github.com/denisecase/pro-analytics-01/>. 
-A concise version is provided at [WORKFLOW_GUIDE.md](./docs/WORKFLOW_GUIDE.md)
+## Model Performance
+The trained **Linear Regression Model** is evaluated using:
+- **R² Score:** Measures how well the model explains variability.
+- **Mean Absolute Error (MAE):** Average absolute differences between actual and predicted values.
+- **Root Mean Squared Error (RMSE):** Measures prediction error magnitude.
 
-**Important:** VS Code + Pylance may fail to recognize installed packages in Jupyter notebooks.  
-See the above guides for troubleshooting and solutions.  
+## Results
+- The **R² Score** indicates how well the model fits the data.
+- **Lower RMSE and MAE** suggest better performance.
 
----
+## Future Improvements
+- Experimenting with **additional regression models** (e.g., Decision Trees, Random Forests).
+- Feature engineering to improve predictive performance.
+- Hyperparameter tuning for better optimization.
 
-## Project Outline
-Machine learning projects follow a structured approach.
-We will use this approach throughout the course. 
+## Author
+**Huzaifa Nadeem**
 
-Start your notebook professionally with:
-- a single top-level title
-- your name (or alias)
-- the date
-- a brief introduction that describes the problem and the dataset.
-- Import the external Python libraries used (e.g., pandas, numpy, matplotlib, seaborn, sklearn, etc.)
-
-Present your work in clearly numbered second-level and third-level headings
-
-### Section 1. Load and Explore the Data
-- 1.1 Load the dataset and display the first 10 rows.
-- 1.2 Check for missing values and display summary statistics.
-
-Analysis: What do you notice about the dataset? Are there any data issues?
-
-### Section 2. Visualize Feature Distributions
-- 2.1 Create histograms, boxplots, and scatterplots.
-- 2.2 Identify patterns or anomalies in feature distributions.
-
-Analysis: What patterns or anomalies do you see? Do any features stand out?
-
-### Section 3. Feature Selection and Justification
-- 3.1 Choose two input features for predicting the target.
-- 3.2 Justify your selection with reasoning.
-
-Analysis: Why did you choose these features? How might they impact predictions?
-
-### Section 4. Train a Linear Regression Model
-- 4.1 Define X (features) and y (target).
-- 4.2 Train a Linear Regression model using Scikit-Learn.
-- 4.3 Report R^2, MAE, RMSE.
-
-Analysis: How well did the model perform? Any surprises in the results?
-
-See [EXAMPLE_ANALYSIS](./docs/EXAMPLE_ANALYSIS.md) for more.
+## License
+This project is for educational purposes. Modify and distribute as needed!
 
 ---
+For any issues, feel free to reach out!
 
-## README.md (Required)
 
-Include a professional README.md. Include:
-- a personalized title
-- an introduction to your project
-- a clickable link to your notebook file.
-- Instructions on how to set up your virtual environment and run your notebook locally.
-   
-If starting with an assignment README, remove the parts you do not need to present your project.
----
-
-## Repository Checklist
-
-Verify your repository contains:
-
-- [ ] Useful .gitignore (that keeps .venv out of GitHub)
-- [ ] Professional Jupyter Notebook with numbered sections   
-- [ ] Useful README.md
-- [ ] Useful requirements.txt
 
