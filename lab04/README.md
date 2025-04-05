@@ -11,7 +11,6 @@ A short bonus section repeats the workflow on the Iris dataset to earn extra cre
 |---------------|---------|
 | `ml04_huzaifanadeem.ipynb` | Fully‑executed Jupyter notebook with all analysis, plots, and reflections |
 | `README.md`   | This file – explains what the lab does and how to run it |
-| (screenshots) | PNGs referenced in the submission prompts (optional) |
 
 ## How to Run
 1. Open the repository in VS Code (or JupyterLab).  
@@ -39,4 +38,4 @@ A short bonus section repeats the workflow on the Iris dataset to earn extra cre
 
 ## Author
 Huzaifa Nadeem  
-March 21, 2025
+4-4-2025
